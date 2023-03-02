@@ -4,3 +4,7 @@ namespace: demo-gitops
 resources:
   - ../../base
   - argocd.yaml
+patches:
+  - path: patch-namespace.yaml
+    target:
+      kind: Namespace
