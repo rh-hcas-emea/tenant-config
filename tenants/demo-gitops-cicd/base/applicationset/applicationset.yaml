@@ -11,6 +11,8 @@ spec:
   template:
     metadata:
       name: '{{path.basename}}'
+      labels:
+        app: '{{path.basename}}'
     spec:
       project: default
       source:

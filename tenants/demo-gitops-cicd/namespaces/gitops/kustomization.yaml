@@ -7,7 +7,6 @@ resources:
   - dev
   - stage
   - prod
-
 patches:
   - path: patch-namespace.yaml
     target:
