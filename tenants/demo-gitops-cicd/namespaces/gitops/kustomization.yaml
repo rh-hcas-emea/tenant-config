@@ -3,10 +3,8 @@ kind: Kustomization
 namespace: demo-gitops
 resources:
   - ../../base/namespace
+  - application.yaml
   - argocd.yaml
-  - dev
-  - stage
-  - prod
 patches:
   - path: patch-namespace.yaml
     target:
