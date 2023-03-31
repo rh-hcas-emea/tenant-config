@@ -15,3 +15,12 @@ spec:
   server:
     route:
       enabled: true
+  dex:
+    openShiftOAuth: true
+    resources:
+      limits:
+        cpu: 500m
+        memory: 256Mi
+      requests:
+        cpu: 250m
+        memory: 128Mi
