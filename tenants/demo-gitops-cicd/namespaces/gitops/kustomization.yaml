@@ -5,6 +5,9 @@ resources:
   - ../../base/namespace
   - application.yaml
   - argocd.yaml
+  - rolebinding.yaml
+  - role.yaml
+
 patches:
   - path: patch-namespace.yaml
     target:
